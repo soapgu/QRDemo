@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name = "QRDemo"
+include ':zxing'
+include ':zxing'
