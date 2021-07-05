@@ -6,13 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/QRStart"
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="340dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/QRStart" />
+
+        <EditText
+            android:id="@+id/tv_input"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:ems="10"
+            android:text="@string/sampleInput"
+            android:autofillHints="none"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+
+        <Button
+            android:id="@+id/button_show"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/QRShow" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
